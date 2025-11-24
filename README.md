@@ -1,115 +1,114 @@
-📧 Prompt-Driven Email Productivity Agent
+Here is the content formatted as a clean, professional `README.md` file. You can copy the raw code block below and paste it directly into your project.
 
-An intelligent, customizable email-processing system powered by LLMs.
-Users control the system through Prompt Brains (stored prompts) that define:
+-----
 
-Email Categorization
+# 📧 Prompt-Driven Email Productivity Agent
 
-Action-Item Extraction
+**An intelligent, customizable email-processing system powered by LLMs.**
 
-Auto-Draft Replies
+Users control the system through **Prompt Brains** (stored prompts) that define email categorization, action-item extraction, auto-draft replies, and inbox-wide querying. The agent loads a mock inbox, processes emails, and displays structured results through a responsive **Streamlit UI**.
 
-Inbox-Wide Chat
+-----
 
-The agent can load a mock inbox, process emails, and display structured results through a responsive Streamlit UI.
+## ⭐ Features
 
-⭐ Features
-🔹 Email Ingestion
+### 🔹 Email Ingestion
 
-Load mock inbox (JSON)
+  * **Load Mock Inbox:** Ingest email data via JSON.
+  * **Preview:** View individual emails before processing.
+  * **Selection:** Choose specific emails for detailed AI analysis.
 
-Preview individual emails
+### 🔹 Prompt-Driven Processing
 
-Select an email for AI processing
+  * **Customizable Prompts:** Users can edit categorization logic on the fly.
+  * **Action Extraction:** Extract tasks based on user-defined templates.
+  * **Auto-Drafting:** Generate replies with customizable tone and rules.
 
-🔹 Prompt-Driven Processing
+### 🔹 AI-Powered Results
 
-Users can edit categorization prompts
+  * **Smart Categorization:** Automatically tags emails (e.g., "To-Do", "Meeting", "Spam").
+  * **Action Items:** detailed extraction of tasks, deadlines, and urgency.
+  * **Structured UI:** Beautifully formatted results.
+  * **History:** Multi-email session history.
 
-Action item extraction based on user-defined templates
+### 🔹 Inbox-Wide AI Chat
 
-Auto-reply drafting with customizable tone and rules
+Ask questions about your entire inbox:
 
-🔹 AI-Powered Results
+  * *"Summarize the inbox"*
+  * *"Show all urgent emails"*
+  * *"Which emails need replies?"*
 
-Smart categorization
+-----
 
-Detailed action-item extraction
+## 🛠️ Setup Instructions
 
-Beautiful, structured UI formatting
+### 1\. Prerequisites
 
-Multi-email history stored in session
+  * Python 3.9+
+  * pip
+  * A valid **OpenAI API Key** (or compatible model provider)
 
-🔹 Inbox-Wide AI Chat
+### 2\. Install Dependencies
 
-“Summarize the inbox”
+Navigate to your project folder and install the required packages:
 
-“Show all urgent emails”
-
-“Which emails need replies?”
-
-🛠️ 1. Setup Instructions
-✅ Prerequisites
-
-Install:
-
-Python 3.9+
-
-pip
-
-A valid OpenAI API key (or compatible model provider)
-
-📦 Install Dependencies
-
-Inside your project folder:
-
+```bash
 pip install -r requirements.txt
+```
 
+*If you do not have a `requirements.txt` yet, run:*
 
-If you don’t have a requirements.txt yet, use:
-
+```bash
 pip install streamlit openai python-dotenv
+```
 
-🔑 Configure API Key
+### 3\. Configure API Key
 
-Create a .env file:
+Create a `.env` file in the root directory and add your key:
 
+```env
 OPENAI_API_KEY=your_api_key_here
+```
 
+**Alternatively, set it via the terminal:**
 
-Or set environment variable:
+  * **Mac/Linux:**
+    ```bash
+    export OPENAI_API_KEY="your_api_key_here"
+    ```
+  * **Windows:**
+    ```cmd
+    setx OPENAI_API_KEY "your_api_key_here"
+    ```
 
-export OPENAI_API_KEY="your_api_key_here"
+-----
 
+## 🚀 How to Run
 
-Windows:
+Run the Streamlit application:
 
-setx OPENAI_API_KEY "your_api_key_here"
-
-🚀 2. How to Run the UI and Backend
-
-Run Streamlit:
-
+```bash
 streamlit run app.py
+```
 
+**This launches:**
 
-This launches:
+  * The full User Interface
+  * All backend logic and the Email Processing Agent
+  * The Prompt Editor
 
-The full UI
+*Note: No separate backend server is required—Streamlit handles everything.*
 
-All backend logic
+-----
 
-Prompt editor
+## 📥 Loading the Mock Inbox
 
-Email processing agent
+### Mock Inbox Format (`mock_inbox.json`)
 
-No separate server is required — Streamlit handles everything.
+Your inbox should be a JSON array of objects. Example:
 
-📥 3. How to Load the Mock Inbox
-Mock Inbox Format (mock_inbox.json)
-
-A sample structure:
-
+```json
 [
   {
     "subject": "Submit Monthly Timesheet",
@@ -122,115 +121,98 @@ A sample structure:
     "body": "Can you prepare the slide deck and send tomorrow morning?"
   }
 ]
+```
 
-Load Inbox in UI
+### How to Load in UI
 
-Open the app
+1.  Open the app in your browser.
+2.  Navigate to the **"Mock Inbox Loader"** section.
+3.  Select your `.json` file.
+4.  Emails will automatically populate the dropdown list.
 
-Navigate to "Mock Inbox Loader" section
+-----
 
-Choose your JSON file
+## ⚙️ Configuring Prompts
 
-Emails appear automatically in the dropdown list
+The agent's behavior is defined by `prompts.json`. This makes the system truly customizable.
 
-⚙️ 4. How to Configure Prompts
+### Example Structure
 
-Your prompts live in:
-
-prompts.json
-
-Example Structure
+```json
 {
   "categorization_prompt": "You are an intelligent email classification system...",
   "action_item_prompt": "Extract all tasks in JSON format...",
   "auto_reply_prompt": "Draft a polite reply given the email content..."
 }
+```
 
-Change Prompts in UI
+### How to Edit
 
-Open the Prompt Brain Editor panel
+1.  Open the **Prompt Brain Editor** panel in the UI.
+2.  Edit the text for **Categorization**, **Action-Items**, or **Auto-Reply**.
+3.  Click **Save Prompts**.
+4.  *New prompts take effect immediately.*
 
-Edit any prompt:
+-----
 
-Categorization
+## 🧪 Usage Examples
 
-Action-Item Extraction
+### 📨 Example 1: Categorization
 
-Auto-Reply Draft
+  * **Email:** "Please send me the Q4 status report by end of day."
+  * **Output:**
+    ```json
+    { "category": "To-Do" }
+    ```
 
-Click Save Prompts
+### ✔️ Example 2: Action Item Extraction
 
-New prompts take effect immediately
+  * **Email:** "Prepare the weekly metrics deck and send it tomorrow morning."
+  * **Output:**
+    ```json
+    [
+      {
+        "task": "Prepare the weekly metrics deck",
+        "urgency": "high",
+        "deadline": "tomorrow morning",
+        "reason": "Sender needs the deck for reporting."
+      }
+    ]
+    ```
 
-Why This Matters
+### ✉️ Example 3: Auto-Draft Reply
 
-The agent’s entire behavior changes based on these prompt configurations — making the system truly customizable.
+  * **Email:** "Can we meet tomorrow at 3 PM to discuss sprint planning?"
+  * **Output:**
+    > Hi,
+    > Thanks for reaching out. Yes, 3 PM tomorrow works for me. Please let me know if you’d like a supporting agenda.
+    > Best regards,
 
-🧪 5. Usage Examples
-📨 Example 1 — Categorization
+### 🤖 Example 4: Inbox-Wide Chat
 
-Email:
+  * **User:** "Show me all urgent emails."
+  * **System:** Returns a filtered set of high-urgency tasks based on extracted AI metadata.
 
-“Please send me the Q4 status report by end of day.”
+-----
 
-Output:
+## 📂 Project Structure
 
-{
-  "category": "To-Do"
-}
-
-✔️ Example 2 — Action Item Extraction
-
-Email:
-
-“Prepare the weekly metrics deck and send it tomorrow morning.”
-
-Output:
-
-[
-  {
-    "task": "Prepare the weekly metrics deck",
-    "urgency": "high",
-    "deadline": "tomorrow morning",
-    "reason": "Sender needs the deck for reporting."
-  }
-]
-
-✉️ Example 3 — Auto-Draft Reply
-
-Email:
-
-“Can we meet tomorrow at 3 PM to discuss sprint planning?”
-
-Output:
-
-Hi,
-Thanks for reaching out. Yes, 3 PM tomorrow works for me.
-Please let me know if you’d like a supporting agenda.
-Best regards,
-
-🤖 Example 4 — Inbox-Wide Chat
-
-User asks:
-
-“Show me all urgent emails.”
-
-System returns a filtered set of high-urgency tasks based on extracted AI metadata.
-
-📂 Project Structure
+```text
 /email-productivity-agent
-  ├── app.py
-  ├── prompts.json
-  ├── mock_inbox.json
-  ├── README.md
-  ├── .env
-  ├── requirements.txt
+├── app.py                 # Main Streamlit application
+├── prompts.json           # Customizable system prompts
+├── mock_inbox.json        # Sample email data
+├── requirements.txt       # Python dependencies
+├── .env                   # API keys (gitignored)
+└── README.md              # Documentation
+```
 
-🏁 Final Notes
+-----
 
-✔ Meets ALL assignment requirements
-✔ Prompt-driven architecture
-✔ Modular and clean code
-✔ Beautiful UI for category + action items
-✔ Robust error handling (no ugly output)
-✔ Designed for extension (Gmail API, SQLite, etc.)
+## 🏁 Final Notes
+
+  - [x] **Prompt-driven architecture:** Logic is separated from code.
+  - [x] **Modular:** Designed for extension (Gmail API, SQLite, etc.).
+  - [x] **Beautiful UI:** Clean formatting for categories and action items.
+  - [x] **Robust:** Error handling ensures no raw/broken output.
+  - [x] **Meets ALL assignment requirements.**
