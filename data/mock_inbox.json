@@ -1,0 +1,122 @@
+[
+  {
+    "sender": "manager@company.com",
+    "subject": "Project Status Report – Due Today",
+    "timestamp": "2024-11-01 09:00 AM",
+    "body": "Hi, please send me your full status report for Sprint 12 by end of day. Include completed tasks, blockers, and next steps. Thanks!"
+  },
+  {
+    "sender": "lead.pm@company.com",
+    "subject": "Need Slide Deck for Friday’s Demo",
+    "timestamp": "2024-11-01 11:20 AM",
+    "body": "Can you prepare the presentation slides for Friday’s client demo? Please send me the first draft by tomorrow morning."
+  },
+  {
+    "sender": "marketing@company.com",
+    "subject": "Website Banner Update Required",
+    "timestamp": "2024-10-30 01:10 PM",
+    "body": "We need to update the home-page banner for the new launch. Please apply the new creative assets and publish it before Monday."
+  },
+  {
+    "sender": "finance@company.com",
+    "subject": "Budget Approval Needed",
+    "timestamp": "2024-10-29 03:45 PM",
+    "body": "Please review the attached budget proposal and approve it before the 15th. Let me know if you need revisions."
+  },
+  {
+    "sender": "qa.team@company.com",
+    "subject": "Urgent: Authentication Bug",
+    "timestamp": "2024-11-02 08:15 AM",
+    "body": "Users are unable to reset their passwords. Please investigate this issue and deploy a fix as soon as possible."
+  },
+  {
+    "sender": "hr@company.com",
+    "subject": "Monthly Timesheet Reminder",
+    "timestamp": "2024-11-03 10:00 AM",
+    "body": "Hi, this is a reminder to submit your monthly timesheet before 6 PM today."
+  },
+  {
+    "sender": "scrum.master@company.com",
+    "subject": "Schedule Next Sprint Planning",
+    "timestamp": "2024-10-28 02:00 PM",
+    "body": "Can you schedule our Sprint Planning meeting for Wednesday at 10 AM? Ensure the agenda draft is shared beforehand."
+  },
+  {
+    "sender": "dev.team@company.com",
+    "subject": "PR Review Needed",
+    "timestamp": "2024-11-02 11:40 AM",
+    "body": "Please review PR #482 and provide your comments today so we can merge before release freeze."
+  },
+  {
+    "sender": "techwriter@company.com",
+    "subject": "Documentation Update",
+    "timestamp": "2024-11-01 04:25 PM",
+    "body": "The new analytics endpoint needs documentation. Add usage examples and update the API reference by Friday."
+  },
+  {
+    "sender": "compliance@company.com",
+    "subject": "Mandatory Security Training",
+    "timestamp": "2024-11-03 09:15 AM",
+    "body": "You must complete the annual cybersecurity training by the end of this week. Certificates will be checked on Monday."
+  },
+  {
+    "sender": "account.manager@company.com",
+    "subject": "Client Feedback Needed",
+    "timestamp": "2024-10-31 10:40 AM",
+    "body": "Could you review the client's message and send me your feedback so I can finalize the response?"
+  },
+  {
+    "sender": "product.lead@company.com",
+    "subject": "Product Roadmap Update",
+    "timestamp": "2024-11-01 02:55 PM",
+    "body": "Please update the roadmap to include this month’s deliverables and share the new version with the leadership team."
+  },
+  {
+    "sender": "support@company.com",
+    "subject": "Payment Failure",
+    "timestamp": "2024-11-02 12:30 PM",
+    "body": "A customer’s subscription payment failed. Can you check their account logs and resolve it today?"
+  },
+  {
+    "sender": "operations@company.com",
+    "subject": "Meeting Recording Upload",
+    "timestamp": "2024-11-03 05:10 PM",
+    "body": "Please upload yesterday’s meeting recording to the shared drive and notify the team once done."
+  },
+  {
+    "sender": "release.manager@company.com",
+    "subject": "Release Notes Required",
+    "timestamp": "2024-10-30 09:00 AM",
+    "body": "We need the release notes for version 3.4 finalized by tonight. Include bug fixes, new features, and known issues."
+  },
+  {
+    "sender": "engineering@company.com",
+    "subject": "Git Cleanup",
+    "timestamp": "2024-11-02 03:20 PM",
+    "body": "Reminder: please delete unused Git branches older than 60 days. Cleanup required before next sprint."
+  },
+  {
+    "sender": "hr@company.com",
+    "subject": "New Hire Onboarding",
+    "timestamp": "2024-11-01 02:10 PM",
+    "body": "Please send the onboarding checklist to the new intern and guide them through the first-day setup."
+  },
+  {
+    "sender": "design.team@company.com",
+    "subject": "UI Mockups Review",
+    "timestamp": "2024-11-03 11:50 AM",
+    "body": "We need your approval on the new UI mockups. Please review the Figma file and share your comments."
+  },
+  {
+    "sender": "infra@company.com",
+    "subject": "Database Backup Required",
+    "timestamp": "2024-11-03 08:45 PM",
+    "body": "Please run the full database backup tonight and confirm once completed."
+  },
+  {
+    "sender": "strategy@company.com",
+    "subject": "Competitor Analysis Request",
+    "timestamp": "2024-11-02 10:05 AM",
+    "body": "Can you prepare a short competitor analysis report for tomorrow’s meeting? Include product strengths and weaknesses."
+  }
+]
