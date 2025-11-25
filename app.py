@@ -74,7 +74,7 @@ st.markdown("""
 # -----------------------------------------
 # OPENAI
 # -----------------------------------------
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI()
 
 # -----------------------------------------
 # LOAD/SAVE PROMPTS
